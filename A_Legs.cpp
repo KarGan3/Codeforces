@@ -6,7 +6,17 @@ int main(){
     while(n--){
         int t;
         cin>>t;
-        int leg = t / 4 + (n % 4 != 0);
-        cout<<leg<<endl;
+        int count = 0;
+        while(t != 0){
+            if(t < 4){
+                count++;
+                t -= 2;   
+            }
+            else{
+                count++;
+                t -=4;
+            }
+        }
+        cout<<count<<endl;
     }
 }
