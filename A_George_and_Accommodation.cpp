@@ -6,9 +6,9 @@ int main(){
     cin>>n;
     int count = 0;
     while(n--){
-        long long m,n;
+        int m,n;
         cin>>m>>n;
-        if(m < n){
+        if(n-m >= 2){
             count++;
         }
     }
